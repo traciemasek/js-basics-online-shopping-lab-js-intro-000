@@ -47,8 +47,12 @@ function total() {
   return prices.reduce(reducer);
 }
 
+
 function removeFromCart(item) {
-  for (let i = 0; i < cart.length; i++) {
+  if (cart.indexOf(item) === -1) {
+    return `That item is not in your cart.`
+  }
+ /* for (let i = 0; i < cart.length; i++) {
     if (cart[i].itemName !== item) {
     }
     
@@ -57,7 +61,7 @@ function removeFromCart(item) {
       return cart;
     }
     
-  }
+  } */
 }
 
 function placeOrder(cardNumber) {
