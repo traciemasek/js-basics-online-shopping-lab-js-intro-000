@@ -55,7 +55,7 @@ function removeFromCart(item) {
       return cart;
     }
   }
-  return 
+  return `That item is not in your cart.`
   /* let i = cart.indexOf(item);
   if (i === -1) {
     return `That item is not in your cart.`
