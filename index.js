@@ -53,7 +53,7 @@ function removeFromCart(item) {
   if (i === -1) {
     return `That item is not in your cart.`
   }
-    cart.splice(i, 0);
+    cart.splice(i, i + 1);
     return cart
 }
 
