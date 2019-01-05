@@ -64,5 +64,5 @@ function placeOrder(cardNumber) {
   }
     cart.slice(0);
     return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
-  }
+
 }
